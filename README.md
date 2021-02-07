@@ -38,7 +38,6 @@ Install the required libraries using the following command (preferably inside an
 pip install -r requirements.txt
 ~~~
 #### Training
-First generate a pre-trained model on HateXplain by running '''manual_inference.py'''
-Then walk through '''Run_Davidson.ipnyb'' to get a few-shot transferred model on Davidson benchmark dataset.
-'''Plotting.ipynb''' will generate visualizations related to the results
-~~~
+First generate a pre-trained model on HateXplain by running manual_inference.py
+Then walk through Run_Davidson.ipnyb to get a few-shot transferred model on Davidson benchmark dataset.
+Plotting.ipynb will generate visualizations related to the results
