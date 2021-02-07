@@ -1,4 +1,4 @@
-# :mag_right: Few-Shot Learning from HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection [Accepted at AAAI 2021]
+# :mag_right: Few-Shot Learning from HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection 
 
 ## Objective of Work
 
