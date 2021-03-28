@@ -7,7 +7,7 @@ from collections import Counter
 from .preProcess import ek_extra_preprocess
 from .attentionCal import aggregate_attention
 from .spanMatcher import returnMask,returnMaskonetime
-from transformers import BertTokenizer
+from transformers import AutoTokenizer, BertTokenizer
 from .utils import CheckForGreater,most_frequent
 from .preProcess import *   
 from transformers import BertTokenizer
@@ -224,7 +224,7 @@ def transform_dummy_data(sentences):
 def collect_data(params):
     if(params['bert_tokens']):
         print('Loading BERT tokenizer...')
-        tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=False)
+        tokenizer = AutoTokenizer.from_pretrained('xlm-roberta-base', do_lower_case=False)
     else:
         tokenizer=None
     data_all_labelled=get_annotated_data(params)

@@ -78,12 +78,12 @@ def encodeData(dataframe,vocab,params):
 
 def createDatasetSplit(params):
     filename=set_name(params)
-    if path.exists(filename):
-        ##### REMOVE LATER ######
-        #dataset=collect_data(params)
-        pass
-    else:
-        dataset=collect_data(params)
+    # if path.exists(filename):
+    #     ##### REMOVE LATER ######
+    #     #dataset=collect_data(params)
+    #     pass
+    # else:
+    dataset=collect_data(params)
         
     if(path.exists(filename[:-7])):
         with open(filename[:-7]+'/train_data.pickle', 'rb') as f:
